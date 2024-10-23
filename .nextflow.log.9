@@ -1,0 +1,54 @@
+Oct-22 23:03:49.947 [main] DEBUG nextflow.cli.Launcher - $> nextflow run code/spletter_nextflow.nf
+Oct-22 23:03:49.990 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Oct-22 23:03:50.002 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/drinnan/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Oct-22 23:03:50.008 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-22 23:03:50.009 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-22 23:03:50.011 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-22 23:03:50.016 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-22 23:03:50.058 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-22 23:03:50.068 [main] INFO  nextflow.cli.CmdRun - Launching `code/spletter_nextflow.nf` [naughty_carson] DSL2 - revision: 27dd2735d6
+Oct-22 23:03:50.069 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-22 23:03:50.069 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-22 23:03:50.074 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/drinnan/.nextflow/secrets/store.json
+Oct-22 23:03:50.079 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@59942b48] - activable => nextflow.secret.LocalSecretsProvider@59942b48
+Oct-22 23:03:50.113 [main] DEBUG nextflow.Session - Session UUID: b86f2316-453d-45c1-a600-ba10671eac91
+Oct-22 23:03:50.113 [main] DEBUG nextflow.Session - Run name: naughty_carson
+Oct-22 23:03:50.114 [main] DEBUG nextflow.Session - Executor pool size: 20
+Oct-22 23:03:50.119 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-22 23:03:50.135 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (16:01 CDT)
+  System: Linux 6.2.6-76060206-generic
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21.0.2+13-Ubuntu-122.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 25785@pop-os [127.0.1.1]
+  CPUs: 20 - Mem: 31 GB (1.1 GB) - Swap: 20 GB (20 GB) - Virtual threads ON
+Oct-22 23:03:50.152 [main] DEBUG nextflow.Session - Work-dir: /home/drinnan/projects/spletter_lrRNA/work [ext2/ext3]
+Oct-22 23:03:50.152 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/drinnan/projects/spletter_lrRNA/code/bin
+Oct-22 23:03:50.171 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-22 23:03:50.179 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-22 23:03:50.193 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-22 23:03:50.198 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Oct-22 23:03:50.264 [main] DEBUG nextflow.Session - Session start
+Oct-22 23:03:50.696 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-22 23:03:50.775 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-22 23:03:50.775 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-22 23:03:50.779 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-22 23:03:50.783 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=20; memory=31 GB; capacity=20; pollInterval=100ms; dumpInterval=5m
+Oct-22 23:03:50.784 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-22 23:03:50.840 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: bam_index, kraken2, kraken_uniq, fastqc, qualimap, unmapped_read_extraction
+Oct-22 23:03:50.840 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Oct-22 23:03:50.843 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqc
+Oct-22 23:03:50.844 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_e41e3a77747aa65d: /home/drinnan/projects/spletter_lrRNA/code/spletter_nextflow.nf
+Oct-22 23:03:50.844 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-22 23:03:50.844 [main] DEBUG nextflow.Session - Session await
+Oct-22 23:03:50.844 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/drinnan/projects/test_data/; pattern: *fastq; options: [:]
+Oct-22 23:03:50.846 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - No such file or directory: /home/drinnan/projects/test_data/ -- Skipping visit
+Oct-22 23:03:50.852 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-22 23:03:50.888 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-22 23:03:50.888 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-22 23:03:50.891 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Oct-22 23:03:51.094 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-22 23:03:51.102 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-22 23:03:51.102 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

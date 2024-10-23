@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% Set the geometry of the document
+\geometry{a4paper, margin=1in}
+
+% Customize the section and subsection format
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Spletter long read mRNA-Seq Isoform Analysis}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small University of Missouri-Kansas City}
+
+% Title Information
+\title{Spletter long read mRNA-Seq Isoform Analysis \\ \large Version 1}
+\author{}
+\date{\vspace{-2cm}}
+
+\begin{document}
+
+\maketitle
+
+\setlength{\parindent}{2em} 
+\section{Background}
+Alternative splicing is a mechanism in eukaryotic gene expression where a single pre-mRNA transcript can be spliced in different ways to produce multiple mRNA isoforms, which may encode different protein variants. This process allows a single gene to generate multiple proteins, contributing to proteomic diversity. Exons can be included or excluded, introns retained, or alternative splice sites used, resulting in different mRNA products from the same gene. It is tightly regulated and plays a significant role in tissue specificity and development.
+
+Spletter lab has dropshlila fly mucel, they are looking for isoforms, go check this before you walk in.
+\section{Anaylsis Pipeline}
+
+There are three main anaylsis that can be done with long read isoform discovery, isoform identification, novel isoform discovery, isoform quanitification, differenitial isoform usage.
+
+
+
+pipeline for all three is:
+
+Changes: 
+
+
+\section{Power Anaylsis}
+
+most count based sequencing experiments, pwer anylsis revloves around how much sequencing needs to be done.
+
+Isoform discovery is known for its unusually high fasle paotiive rate, and its lack of tools with maturity to be realibile.
+
+According to all benchmarks, it is the quailty of the data, not the quanitiy, that will yeild the most valubale results.
+
+Measuring this will be tricky, but the benchmarks say quailty is measured like this.
+
+Samples/Experimenal design?
+
+How many samples in each group, what is the question (can we bin samples)
+
+
+
+
+
+\section{Library Prep}
+
+Nanopore flow cells need this much dna to run. 
+
+
+\section{References}
+
+
+
+
+\end{document}
